@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2ef837c-7abc-4d00-9ccc-6e84a6bdc321" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day1-http-base/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day2-context/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3-router/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4-group/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day5-middleware/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day7-panic-recover/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day3-router/gee/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/day3-router/gee/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3-router/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/day3-router/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4-group/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/day4-group/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4-group/gee/gee.go" beforeDir="false" afterPath="$PROJECT_DIR$/day4-group/gee/gee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day5-middleware/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/day5-middleware/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day6-template/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/day6-template/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day7-panic-recover/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/day7-panic-recover/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

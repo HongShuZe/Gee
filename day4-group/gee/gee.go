@@ -6,18 +6,14 @@ import (
 )
 
 //定义请求处理方法
-//参数Request ，该对象包含了该HTTP请求的所有的信息，比如请求地址、Header和Body等信息；
-//参数是ResponseWriter ，利用 ResponseWriter 可以构造针对该请求的响应。
 type HandlerFunc func(*Context)
 
 
-//路由部分
-//在golang中有个Handler的概念，一个URL对应一个Handler，在Handler中处理request的具体逻辑，对应关系保存在一个map结构中
 type (
 	RouterGroup struct {
 		prefix		string        // 部分路由
 		middlewares []HandlerFunc // 支持中间件，中间应用在分组上
-		parent 		*RouterGroup  // 支持嵌套,没怎么用到，可删
+		parent 		*RouterGroup  // 支持嵌套, 没怎么用到，可删
 		engine 		*Engine       // 所有group共享一个Engine实例，Group通过该指针可以访问router
 	}
 
@@ -36,6 +32,7 @@ func New() *Engine {
 	 return engine
 }
 
+//路由分组
 func (group *RouterGroup) Group(prefix string) *RouterGroup {
 	engine := group.engine
 	newGroup := &RouterGroup{
@@ -70,9 +67,6 @@ func (engine *Engine) Run(addr string) (err error) {
 	return http.ListenAndServe(addr, engine)
 }
 
-/*type Handler interface {
-	ServeHTTP(w ResponseWriter, r *Request)
-}*/
 //实现ServeHTTP方法
 func (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request)  {
 	c := newContext(w, req)
