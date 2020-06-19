@@ -90,7 +90,6 @@ func (r *router) getRoutes(method string) []*node {
 	return nodes
 }
 
-
 func (r *router) handle(c *Context)  {
 	n, params := r.getRoute(c.Method, c.Path)
 	if n != nil {

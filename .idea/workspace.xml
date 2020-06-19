@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2ef837c-7abc-4d00-9ccc-6e84a6bdc321" name="Default Changelist" comment="" />
+    <list default="true" id="d2ef837c-7abc-4d00-9ccc-6e84a6bdc321" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day1-http-base/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day2-context/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3-router/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day4-group/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day5-middleware/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day7-panic-recover/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3-router/gee/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/day3-router/gee/router.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +24,9 @@
     </option>
   </component>
   <component name="GOROOT" path="D:\go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -43,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\goproject\src\Gee\day7-panic-recover" />
-      <recent name="F:\goproject\src\Gee\day6-template\static\css" />
-      <recent name="F:\goproject\src\Gee\day6-template\templates" />
-      <recent name="F:\goproject\src\Gee\day6-template\gee" />
-      <recent name="F:\goproject\src\Gee\day6-template" />
+      <recent name="E:\Git仓库\Gee\day7-panic-recover" />
+      <recent name="E:\Git仓库\Gee\day5-middleware" />
+      <recent name="E:\Git仓库\Gee\day4-group" />
+      <recent name="E:\Git仓库\Gee\day3-router" />
+      <recent name="E:\Git仓库\Gee\day2-context" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\goproject\src\Gee\day6-template\static" />
