@@ -29,7 +29,14 @@ Handler是一个接口， 需要实现方法ServeHTTP。 只要传入实现该�
 
 
 三、代码实现
-我们可以建一个结构体Engine，里面保存路由映射表（即每个路由对有应不同的处理方法HandlerFunc），并实现ServeHTTP作为框架入口， 还有增加路由的方法
+
+##### 解析
+Engine 里面有一个router的路由映射表， 用来保存url对应的HandlerFunc。
+而且Engine实现了方法ServeHTTP，作为框架的入口
+
+HandlerFunc是定义请求处理方法，参数Request ，该对象包含了该HTTP请求的所有的信息，比如请求地址、Header和Body等信息；参数ResponseWriter ，利用 ResponseWriter 可以构造针对该请求的响应。
+
+GET和POST方法就是将路由和处理方法注册路由表中。ServeHTTP就可以根据路由表调用对应的HandlerFunc。
 
 ##### 架构雏形
 ```
@@ -144,15 +151,6 @@ func main() {
 }
 
 ```
-
-三、 部分解析
-HandlerFunc是定义请求处理方法，参数Request ，该对象包含了该HTTP请求的所有的信息，比如请求地址、Header和Body等信息；参数ResponseWriter ，利用 ResponseWriter 可以构造针对该请求的响应。
-
-Engine 里面有一个router的路由映射表， 用来保存url对应的HandlerFunc。
-而且Engine实现了方法ServeHTTP，作为框架的入口
-
-GET和POST方法就是将路由和处理方法注册路由表中。ServeHTTP就可以根据路由表调用对应的HandlerFunc。
-
 
 [此gee框架是参考geektutu](https://geektutu.com/post/gee.html)
 
