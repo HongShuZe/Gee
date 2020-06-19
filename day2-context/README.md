@@ -1,11 +1,11 @@
-##Context上下文
+## Context上下文
 
 context是在框架起到很大的作用，可以把很多重要内容封装进去（如中间件等， 请求信息等），然后通过访问Context就可以方便的拿到需要的数据。把扩展性和复杂性留在Context内部， 对外简化接口。
 
 我们把http.ResponseWriter和*http.Request封装进Context， 并提供html/json/string等返回类型的方法
 
-####context.go
-#####增加结构体Context
+#### context.go
+##### 增加结构体Context
 ```
 package gee
 
@@ -31,7 +31,7 @@ type Context struct {
 
 ```
 
-#####新增方法
+##### 新增方法
 有了context， 就可以从中方便的取得想要的数据或改变数据
 ```
 //从url解析参数的方法
@@ -91,7 +91,7 @@ c.Writer.WriteHeader(200)
 c.Writer.Write([]byte(resp))
 ```
 
-###router.go
+### router.go
 把路由映射表提取出来，把和router处理有关的方法提取出来，方便增强，简化gee.go
 ```
 package gee
@@ -121,7 +121,7 @@ func (r *router) handle(c *Context) {
 }
 ```
 
-###gee.go
+### gee.go
 将HandlerFunc的参数简化为Context， 需要使用路由映射表的通过访问router.go
 ```
 package gee
